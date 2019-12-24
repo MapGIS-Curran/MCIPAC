@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#appLayout {
+    height: 100%;
+}
+#leftCol {
+    width: 18%;
+}
+
+.claro .demoLayout .edgePanel {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+a {
+  color: #08306b;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #4d9221;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <title>Camp Foster Dojo App: Curran McBride</title>
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.13.0/dijit/themes/claro/claro.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.12/"></script>
+  <link rel="stylesheet" href="main.css" />
+  <script src="main.js"></script>
+</head>
+<body class="claro">
+  <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
+    <div class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+      <div id="viewDiv"></div>
+    </div>
+    <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
+      <h1>Marine Corps Installations Pacific: MCB Camp Butler</h1>
+    </div>
+    <div id="leftCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'left', splitter: true">
+      <div id="paneDiv">
+        <h2>Camp Foster Marine Corps Base</h2>
+        <p>Named after the Medal of Honor recipient PFC William A. Foster, Camp Foster is a United States Marine Corps base located in Ginowan City, Okinawa. The geographical extent of Camp Foster includes portions of Okinawa City, Chatan town and Kitanakagusuku
+          village. Units on Camp Foster include the headquarters of <a href="https://www.mcbbutler.marines.mil/" target="_blank">Marine Corps Base Camp Butler</a>, <a href="https://www.mcipac.marines.mil/" target="_blank">Marine Corps Installations Pacific</a>,
+          and the <a href="https://www.usfj.mil/" target="_blank">Okinawa Area Field Office of United States Forces Japan</a>.</p>
+        <p></p>
+        <b>Building Locator</b><br>Select a Point of Interest from the dropdown menu to locate the feature on the interactive Camp Foster map. A popup will provide additional details.<br/>
+        <br/> Point of Interest: <select id="Selection">
+        <option value="None">None</option>
+        <option value="Arbys">Arby's</option>
+        <option value="Behavioral Health">Behavioral Health</option>
+        <option value="Bowling Center">Bowling Center</option>
+        <option value="Chapel">Chapel</option>
+        <option value="Child Development Center">Child Development Center</option>
+        <option value="Commissary">Commissary</option>
+        <option value="Evans Clinic">Evans Clinic</option>
+        <option value="Exchange">Exchange</option>
+        <option value="Gas Station">Gas Station</option>
+        <option value="GSA">GSA</option>
+        <option value="Gunners Fitness Center">Gunner's Fitness Center</option>
+        <option value="IPAC">IPAC</option>
+        <option value="Joint Reception Center">Joint Reception Center</option>
+        <option value="Killin Elementary">Killin Elementary</option>
+        <option value="Kishaba Youth Center">Kishaba Youth Center</option>
+        <option value="Kubasaki High School">Kubasaki High School</option>
+        <option value="Legal Office">Legal Office</option>
+        <option value="Library">Library</option>
+        <option value="MCB/MAW Headquarters">MCB/MAW Headquarters</option>
+        <option value="Military Clothing">Military Clothing</option>
+        <option value="Movie Theater">Movie Theater</option>
+        <option value="Hospital">Hospital</option>
+        <option value="Navy Federal Credit Union">Navy Federal Credit Union</option>
+        <option value="Ocean Breeze">Ocean Breeze</option>
+        <option value="PMO">PMO</option>
+        <option value="Pool 25m">Pool (25m)</option>
+        <option value="Pool 50m">Pool (50m)</option>
+        <option value="School Age Care (SAC)">School Age Care (SAC)</option>
+        <option value="Shoppette">Shoppette</option>
+        <option value="Spot Laundromat">Spot Laundromat</option>
+        <option value="Terra Restaurant">Terra Restaurant</option>
+        <option value="USO">USO</option>
+        <option value="Vehicle Registration">Vehicle Registration</option>
+        <option value="Westpac Inn">Westpac Inn</option>
+        <option value="Westpac Lodge">Westpac Lodge</option>
+            </select>
+        <br/>
+          <p style="text-align:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/MCIPAC_logo.png/250px-MCIPAC_logo.png"></p>
+          <p style="text-align:center;"><a href="https://www.mcbbutler.marines.mil/Camps/Camp-Foster/" target="_blank">Camp Foster MCB Website</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
