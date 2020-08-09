@@ -1,5 +1,5 @@
 require([
-  "esri/Map",
+  "esri/WebMap",
   "esri/views/MapView",
   "esri/layers/FeatureLayer",
   "esri/symbols/SimpleFillSymbol",
@@ -11,10 +11,9 @@ require([
   "esri/widgets/BasemapToggle",
   "dojo/parser",
   "dijit/layout/BorderContainer",
-  "dijit/layout/ContentPane",
-  "dojo/domReady!"
+  "dijit/layout/ContentPane"
 ], function(
-  Map,
+  WebMap,
   MapView,
   FeatureLayer,
   SimpleFillSymbol,
@@ -90,13 +89,20 @@ require([
   });
 
   // Instantiate new map with streets.
+  /*
   var map = new Map({ basemap: "streets" });
+  */
+  
+    var map = new WebMap({ portalItem: {
+    id: "7e2b9be8a9c94e45b7f87857d8d168d6"
+  }
+  });
 
   // View constructed with map instance.
   var view = new MapView({
     container: "viewDiv", //DOM node that contains the view.
     map: map,
-    zoom: 15,
+    zoom: 14,
     center: [127.772, 26.299],
     popup: {
       dockEnabled: true,
