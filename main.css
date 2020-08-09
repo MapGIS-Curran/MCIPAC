@@ -1,9 +1,9 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+  text-align: center;
 }
 
 #viewDiv {
@@ -14,10 +14,18 @@ body {
 }
 
 #appLayout {
-  height: 100%;
+    height: 100%;
 }
 #leftCol {
-  width: 18%;
+    width: 20%;
+}
+
+#paneDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  text-align: center;
 }
 
 .claro .demoLayout .edgePanel {
@@ -26,10 +34,23 @@ body {
 }
 
 a {
-  color: #08306b;
+  color: #4c3916;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
   color: #4d9221;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  font-size: 80px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+  color: #4c3916;
 }
